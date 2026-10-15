@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | FrenchCar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">FrenchCar</a>
+      <button class="mobile-toggle" id="menuToggle">☰</button>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tarifs.html">Tarifs & Prestations</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn-red">Prendre RDV</a>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <p class="section-subtitle">Réservation</p>
+    <h1 class="page-title">Contact & Rendez-vous</h1>
+    <p class="page-intro">Remplissez ce formulaire pour réserver votre prestation ou poser vos questions.</p>
+  </section>
+
+  <main style="max-width: 700px; margin: 3rem auto; padding: 0 1.5rem;">
+    <form style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius); padding: 2.5rem;">
+      
+      <div class="form-group">
+        <label for="nom">Nom & Prénom</label>
+        <input type="text" id="nom" class="form-control" placeholder="Votre nom complet" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" class="form-control" placeholder="exemple@domaine.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="formule">Formule choisie</label>
+        <select id="formule" class="form-control">
+          <option style="background: #111;" value="simple">Nettoyage Simple - 49€ HT</option>
+          <option style="background: #111;" value="medium">Nettoyage Médium - 85€ HT</option>
+          <option style="background: #111;" value="luxe">Nettoyage Luxe - 120€ HT</option>
+          <option style="background: #111;" value="ceramique">Traitement Céramique - à partir de 60€ HT</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Détails du véhicule / Message</label>
+        <textarea id="message" rows="4" class="form-control" placeholder="Marque, modèle du véhicule et vos disponibilités..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-red" style="width: 100%;">Envoyer la demande</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; FrenchCar. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
