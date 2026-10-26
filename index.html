@@ -1,47 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FrenchCar | Lavage & Esthétique Automobile</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>French Car Wash</title>
+<meta name="description" content="Lavage et esthétique automobile haut de gamme à Pontault-Combault.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>(function(){try{if('scrollRestoration' in history)history.scrollRestoration='manual'}catch(e){}try{var d=document.documentElement;if(!matchMedia('(prefers-reduced-motion: reduce)').matches){if(sessionStorage.getItem('fc-nav')){d.classList.add('pt','arr');sessionStorage.removeItem('fc-nav')}else if(!sessionStorage.getItem('fc-seen')){d.classList.add('pt')}sessionStorage.setItem('fc-seen','1')}}catch(e){}})();</script>
 </head>
 <body>
-
-  <!-- EN-TÊTE / NAVIGATION -->
-  <header class="header">
-    <div class="nav-container">
-      <a href="index.html" class="brand-logo">FrenchCar</a>
-      <button class="mobile-toggle" id="menuToggle">☰</button>
-      <ul class="nav-links" id="navMenu">
-        <li><a href="index.html" class="active">Accueil</a></li>
-        <li><a href="tarifs.html">Tarifs & Prestations</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <a href="contact.html" class="btn-red">Prendre RDV</a>
+<div class="curtain" id="curtain" aria-hidden="true"><div class="c-logo"><img src="img/logo.png" alt="" width="620" height="149"><span class="c-shine"></span></div><div class="c-bar"><i></i></div></div>
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="French Car Wash, accueil"><img src="img/logo.png" alt="French Car Wash" width="170" height="41"></a>
+    <ul class="links" id="menu"><li><a href="index.html" aria-current="page">Accueil</a></li><li><a href="lavage.html">Lavage</a></li><li><a href="services.html">Services</a></li><li><a href="avis.html">Avis &amp; carte</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <a class="btn sm" href="contact.html">Prendre RDV</a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i></button>
+  </div>
+</header>
+<main id="top">
+<section class="lhero" id="top-hero">
+  <div class="wrap lgrid">
+    <div class="lcopy">
+      <span class="eyebrow rise" style="--d:.05s">Pontault-Combault</span>
+      <h1 class="rise" style="--d:.15s">L'art du lavage automobile <em>haut de gamme</em></h1>
+      <p class="lead rise" style="--d:.3s">Sublimez et protégez votre véhicule grâce à nos services de lavage, rénovation et soin de carrosserie d'exception.</p>
+      <div class="rule3 rise" style="--d:.38s" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="cta rise" style="--d:.46s"><a class="btn" href="contact.html">Prendre RDV</a><a class="btn ghost" href="lavage.html">Voir les tarifs</a></div>
+      <div class="lmeta rise" style="--d:.58s"><span><b>Lundi au samedi</b> · 9h à 19h</span><div class="status"><i></i><span></span></div></div>
     </div>
-  </header>
-
-  <!-- BANNIÈRE PRINCIPALE -->
-  <section class="page-hero" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-    <p class="section-subtitle">Excellence & Précision</p>
-    <h1 class="page-title">L'art du lavage automobile haut de gamme</h1>
-    <p class="page-intro" style="margin-bottom: 2rem;">
-      Sublimez et protégez votre véhicule grâce à nos services de lavage, rénovation et soin de carrosserie d'exception.
-    </p>
-    <div style="display: flex; gap: 1rem;">
-      <a href="tarifs.html" class="btn-red">Découvrir les Tarifs</a>
+    <div class="panelblue">
+      <figure class="plate rise" style="--d:.3s" id="plate">
+        <div class="badge-rot" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs><text><textPath href="#circ" textLength="280" lengthAdjust="spacing">FRENCH CAR WASH · PONTAULT-COMBAULT · </textPath></text></svg><b>✦</b></div>
+        <div class="mat"><div class="imgwrap"><img src="img/st-portique.jpg" alt="Le portique de lavage French Car Wash, avec un SUV blanc et des voitures de collection" width="736" height="416"></div></div>
+        <figcaption><span>17 Rue Lucien Brunet · Pontault-Combault</span></figcaption>
+      </figure>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PIED DE PAGE -->
-  <footer class="footer">
-    <p>&copy; FrenchCar. Tous droits réservés.</p>
-  </footer>
+<div class="marq" aria-hidden="true"><div class="marq-track"><span>Lavage</span><span>Dépollution</span><span>Décontamination</span><span>Finition brillance</span><span>Céramique PTFE 12%</span><span>Vitres teintées</span><span>Pare-brise</span><span>Achat et vente</span><span>Lavage</span><span>Dépollution</span><span>Décontamination</span><span>Finition brillance</span><span>Céramique PTFE 12%</span><span>Vitres teintées</span><span>Pare-brise</span><span>Achat et vente</span></div></div>
 
-  <script src="js/main.js"></script>
+<section class="block">
+  <div class="wrap atelier">
+    <div class="mv">
+      <span class="eyebrow">L'atelier</span>
+      <h2 class="h2">Des voitures de collection aux SUV récents.</h2>
+      <p class="lead">Tout passe entre nos mains, avec le même soin. Une station au cœur de Pontault-Combault, ouverte six jours sur sept.</p>
+      <div style="margin-top:1.8rem"><a class="btn ghost" href="contact.html">Venir à l'atelier</a></div>
+    </div>
+    <div class="stats mv"><div><b>6 jours sur 7</b><span>de 9h à 19h</span></div><div><b>4 métiers</b><span>lavage, vitres, pare-brise, vente</span></div><div><b>3 formules</b><span>et un traitement céramique</span></div></div>
+  </div>
+</section>
+
+<section class="block dark">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Lavage</span><h2 class="h2">Trois formules, un traitement céramique.</h2></div><a class="btn ghost" href="lavage.html">Tous les détails</a></div>
+    <div class="fstrip mv">
+      <a href="lavage.html"><b>Simple</b><span class="gp">49€ <small>HT</small></span><p>Dépollution, jantes, aspiration, vitres.</p><span class="more">Découvrir</span></a>
+      <a href="lavage.html"><b>Médium</b><span class="gp">85€ <small>HT</small></span><p>Plastiques, aérations, finition brillance.</p><span class="more">Découvrir</span></a>
+      <a href="lavage.html"><b style="color:var(--red)">Luxe</b><span class="gp">120€ <small>HT</small></span><p>Décontamination, cuirs, sièges et ciel de toit.</p><span class="more">Découvrir</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Au-delà du lavage</span><h2 class="h2">Quatre métiers, un atelier.</h2></div>
+      <a class="btn ghost" href="services.html">Tout voir</a>
+    </div>
+    <div class="svc">
+      <a class="mv" href="lavage.html"><div class="ph"><img src="img/mousse.jpg" alt="Véhicule recouvert de mousse dans un atelier de lavage" style="object-position:50% 40%" decoding="async"></div><div class="cap"><h3>Lavage</h3><p>Nettoyage complet intérieur et extérieur.</p><span>Tarifs</span></div></a>
+      <a class="mv" href="services.html"><div class="ph"><img src="img/vitre.jpg" alt="Reflets de bâtiments sur une vitre de voiture" style="object-position:72% 50%" decoding="async"></div><div class="cap"><h3>Vitres teintées</h3><p>Moins de chaleur, plus d'intimité.</p><span>Découvrir</span></div></a>
+      <a class="mv" href="services.html"><div class="ph"><img src="img/parebrise.jpg" alt="Pare-brise fissuré" style="object-position:50% 35%" decoding="async"></div><div class="cap"><h3>Pare-brise</h3><p>Remplacement et pose professionnelle.</p><span>Découvrir</span></div></a>
+      <a class="mv" href="services.html"><div class="ph"><img src="img/cle.jpg" alt="Remise de clé de voiture" style="object-position:50% 40%" decoding="async"></div><div class="cap"><h3>Achat et vente</h3><p>Accompagnement rapide et transparent.</p><span>Découvrir</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="block" data-s="avis" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Avis &amp; accès</span><h2 class="h2">Ce que disent nos clients.</h2></div><a class="btn ghost" href="avis.html">Tous les avis</a></div>
+    <div class="score"><div class="big">4,5<small>/5</small></div><div><span class="st" aria-hidden="true">★★★★★</span><p>93 avis sur Google</p></div><a class="btn ghost" href="https://share.google/KAlrxgxpI2oIXg9dF" target="_blank" rel="noopener">Tous les avis</a></div>
+    <div class="reviews" style="margin-bottom:clamp(2rem,5vw,3.5rem)">
+      <article class="rv mv"><span class="st" aria-label="5 sur 5">★★★★★</span><p>Vous pouvez y aller les yeux fermés franchement ils sont super pro ma voiture est comme neuve on dirait qu’elle sort du concessionnaire que ce soit intérieur ou extérieur le rapport qualité prix est exceptionnelle</p><b>Nylon Dilan</b><small>Avis Google</small></article><article class="rv mv"><span class="st" aria-label="5 sur 5">★★★★★</span><p>Magnifique service. Rapide et efficace. Je n’ai pas reconnu ma voiture grâce au nettoyage qui lui a donné une deuxième vie</p><b>ata ktr</b><small>Avis Google</small></article><article class="rv mv"><span class="st" aria-label="5 sur 5">★★★★★</span><p>Nettoyage intérieur extérieur de ma voiture nickel ! J’ai également fait appel à eux pour le pose de vitres teintées et rien à redire c’est impeccable</p><b>Madi</b><small>Avis Google</small></article>
+    </div>
+    <div class="access">
+      <div class="gcard mv">
+        <h3>Nous trouver</h3>
+        <p>Retrouve-nous au cœur de Pontault-Combault, du lundi au samedi.</p>
+        <div class="cta"><a class="btn" href="https://share.google/KAlrxgxpI2oIXg9dF" target="_blank" rel="noopener">Itinéraire</a><a class="btn ghost" href="avis.html">Carte et avis</a></div>
+      </div>
+      <div class="map mv"><a class="mapfb" href="https://www.google.com/maps/search/?api=1&amp;query=French+Car+Wash+17+Rue+Lucien+Brunet+77340+Pontault-Combault" target="_blank" rel="noopener"><b>17 Rue Lucien Brunet</b><span>77340 Pontault-Combault</span><em>Ouvrir dans Google Maps</em></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="info">
+      <div><h3>Adresse</h3><p><strong>17 Rue Lucien Brunet</strong><br>77340 Pontault-Combault</p><p style="margin-top:.7rem"><a class="btn sm ghost" href="https://www.google.com/maps/search/?api=1&amp;query=17+Rue+Lucien+Brunet+77340+Pontault-Combault" target="_blank" rel="noopener">Itinéraire</a></p></div>
+      <div><h3>Horaires</h3><p><strong>Lundi au samedi</strong><br>9h à 19h<br>Dimanche fermé</p><div class="status"><i></i><span></span></div></div>
+      <div><h3>Rendez-vous</h3><p>Choisis ta formule et dis-nous quand tu passes.</p><p style="margin-top:.7rem"><a class="btn sm" href="contact.html">Prendre RDV</a></p></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html" aria-label="French Car Wash"><img src="img/logo.png" alt="French Car Wash" width="170" height="41"></a>
+        <p style="margin-top:.8rem;max-width:30ch">Lavage &amp; Esthétique Automobile.</p>
+        <div class="tri" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+      <div>
+        <h4>Atelier</h4>
+        <p>17 Rue Lucien Brunet<br>77340 Pontault-Combault</p>
+        <p>Lundi au samedi, 9h à 19h<br>Dimanche fermé</p>
+        <div class="status"><i></i><span></span></div>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="lavage.html">Lavage et tarifs</a></li>
+          <li><a href="services.html">Vitres teintées, pare-brise, achat et vente</a></li>
+          <li><a href="avis.html">Avis et carte</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Suivre l'atelier</h4>
+        <div class="soc"><a class="pill" href="https://www.instagram.com/frenchcarwash77/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.2 6a1.1 1.1 0 1 1-1.1 1.1A1.1 1.1 0 0 1 17.2 6z"/></svg>Instagram</a><a class="pill" href="https://www.tiktok.com/@frenchcarwash" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 2h-3.2v13.2a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .8.1V9.1a6.1 6.1 0 1 0 5.3 6V8.6a7.6 7.6 0 0 0 4.4 1.4V6.8A4.4 4.4 0 0 1 16.6 2z"/></svg>TikTok</a></div>
+      </div>
+    </div>
+    <div class="legal"><span>&copy; French Car Wash. Tous droits réservés.</span><span>Maquette de démonstration</span></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>

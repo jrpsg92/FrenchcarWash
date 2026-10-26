@@ -1,71 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | FrenchCar</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact | French Car Wash</title>
+<meta name="description" content="Prendre rendez-vous chez French Car Wash, 17 Rue Lucien Brunet à Pontault-Combault.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>(function(){try{if('scrollRestoration' in history)history.scrollRestoration='manual'}catch(e){}try{var d=document.documentElement;if(!matchMedia('(prefers-reduced-motion: reduce)').matches){if(sessionStorage.getItem('fc-nav')){d.classList.add('pt','arr');sessionStorage.removeItem('fc-nav')}else if(!sessionStorage.getItem('fc-seen')){d.classList.add('pt')}sessionStorage.setItem('fc-seen','1')}}catch(e){}})();</script>
 </head>
 <body>
+<div class="curtain" id="curtain" aria-hidden="true"><div class="c-logo"><img src="img/logo.png" alt="" width="620" height="149"><span class="c-shine"></span></div><div class="c-bar"><i></i></div></div>
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="French Car Wash, accueil"><img src="img/logo.png" alt="French Car Wash" width="170" height="41"></a>
+    <ul class="links" id="menu"><li><a href="index.html">Accueil</a></li><li><a href="lavage.html">Lavage</a></li><li><a href="services.html">Services</a></li><li><a href="avis.html">Avis &amp; carte</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
+    <a class="btn sm" href="contact.html">Prendre RDV</a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i></button>
+  </div>
+</header>
+<main>
+<section class="phero grain">
+  <div class="ph"><img src="img/poignee.jpg" alt="" style="object-position:40% 50%" decoding="async"></div>
+  <div class="wrap"><span class="eyebrow">Réservation</span><h1>Contact</h1><p class="lead">Réserve ta prestation ou pose-nous tes questions.</p></div>
+</section>
 
-  <header class="header">
-    <div class="nav-container">
-      <a href="index.html" class="brand-logo">FrenchCar</a>
-      <button class="mobile-toggle" id="menuToggle">☰</button>
-      <ul class="nav-links" id="navMenu">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="tarifs.html">Tarifs & Prestations</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+<section class="block">
+  <div class="wrap contact">
+    <div>
+      <span class="eyebrow">L'atelier</span>
+      <p class="addr"><strong>17 Rue Lucien Brunet</strong><br>77340 Pontault-Combault<br><a href="https://www.google.com/maps/search/?api=1&amp;query=17+Rue+Lucien+Brunet+77340+Pontault-Combault" target="_blank" rel="noopener">Ouvrir l'itinéraire</a></p>
+      <div class="status"><i></i><span></span></div>
+      <div style="margin-top:1.4rem"><div class="soc"><a class="pill" href="https://www.instagram.com/frenchcarwash77/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.2 6a1.1 1.1 0 1 1-1.1 1.1A1.1 1.1 0 0 1 17.2 6z"/></svg>Instagram</a><a class="pill" href="https://www.tiktok.com/@frenchcarwash" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 2h-3.2v13.2a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .8.1V9.1a6.1 6.1 0 1 0 5.3 6V8.6a7.6 7.6 0 0 0 4.4 1.4V6.8A4.4 4.4 0 0 1 16.6 2z"/></svg>TikTok</a></div></div>
+      <ul class="hours">
+        <li data-d="lundi,mardi,mercredi,jeudi,vendredi,samedi"><span>Lundi au samedi</span><span>9h à 19h</span></li>
+        <li data-d="dimanche"><span>Dimanche</span><span>Fermé</span></li>
       </ul>
-      <a href="contact.html" class="btn-red">Prendre RDV</a>
     </div>
-  </header>
-
-  <section class="page-hero">
-    <p class="section-subtitle">Réservation</p>
-    <h1 class="page-title">Contact & Rendez-vous</h1>
-    <p class="page-intro">Remplissez ce formulaire pour réserver votre prestation ou poser vos questions.</p>
-  </section>
-
-  <main style="max-width: 700px; margin: 3rem auto; padding: 0 1.5rem;">
-    <form style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius); padding: 2.5rem;">
-      
-      <div class="form-group">
-        <label for="nom">Nom & Prénom</label>
-        <input type="text" id="nom" class="form-control" placeholder="Votre nom complet" required>
-      </div>
-
-      <div class="form-group">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" class="form-control" placeholder="exemple@domaine.com" required>
-      </div>
-
-      <div class="form-group">
-        <label for="formule">Formule choisie</label>
-        <select id="formule" class="form-control">
-          <option style="background: #111;" value="simple">Nettoyage Simple - 49€ HT</option>
-          <option style="background: #111;" value="medium">Nettoyage Médium - 85€ HT</option>
-          <option style="background: #111;" value="luxe">Nettoyage Luxe - 120€ HT</option>
-          <option style="background: #111;" value="ceramique">Traitement Céramique - à partir de 60€ HT</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="message">Détails du véhicule / Message</label>
-        <textarea id="message" rows="4" class="form-control" placeholder="Marque, modèle du véhicule et vos disponibilités..."></textarea>
-      </div>
-
-      <button type="submit" class="btn-red" style="width: 100%;">Envoyer la demande</button>
+    <form id="form" novalidate>
+      <div><label for="nom">Nom &amp; prénom</label><input class="fld" id="nom" placeholder="Votre nom complet" autocomplete="name"></div>
+      <div><label for="email">E-mail</label><input class="fld" id="email" type="email" placeholder="exemple@domaine.com" autocomplete="email"></div>
+      <div><label for="formule">Prestation</label>
+        <select class="fld" id="formule">
+          <option value="simple">Nettoyage Simple, 49€ HT</option>
+          <option value="medium">Nettoyage Médium, 85€ HT</option>
+          <option value="luxe" selected>Nettoyage Luxe, 120€ HT</option>
+          <option value="ceramique">Traitement Céramique, à partir de 60€ HT</option>
+          <option value="vitres">Vitres teintées</option>
+          <option value="parebrise">Pare-brise</option>
+          <option value="vente">Achat ou vente de voiture</option>
+        </select></div>
+      <div><label for="msg">Détails du véhicule / message</label><textarea class="fld" id="msg" rows="4" placeholder="Marque, modèle du véhicule et vos disponibilités..."></textarea></div>
+      <button class="btn" type="submit">Envoyer la demande</button>
+      <p class="note" id="note" role="status"></p>
     </form>
-  </main>
-
-  <footer class="footer">
-    <p>&copy; FrenchCar. Tous droits réservés.</p>
-  </footer>
-
-  <script src="js/main.js"></script>
+  </div>
+</section>
+<section class="block" style="padding-top:0">
+  <div class="wrap"><div class="map mv" style="min-height:380px"><a class="mapfb" href="https://www.google.com/maps/search/?api=1&amp;query=French+Car+Wash+17+Rue+Lucien+Brunet+77340+Pontault-Combault" target="_blank" rel="noopener"><b>17 Rue Lucien Brunet</b><span>77340 Pontault-Combault</span><em>Ouvrir dans Google Maps</em></a></div></div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html" aria-label="French Car Wash"><img src="img/logo.png" alt="French Car Wash" width="170" height="41"></a>
+        <p style="margin-top:.8rem;max-width:30ch">Lavage &amp; Esthétique Automobile.</p>
+        <div class="tri" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+      <div>
+        <h4>Atelier</h4>
+        <p>17 Rue Lucien Brunet<br>77340 Pontault-Combault</p>
+        <p>Lundi au samedi, 9h à 19h<br>Dimanche fermé</p>
+        <div class="status"><i></i><span></span></div>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="lavage.html">Lavage et tarifs</a></li>
+          <li><a href="services.html">Vitres teintées, pare-brise, achat et vente</a></li>
+          <li><a href="avis.html">Avis et carte</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Suivre l'atelier</h4>
+        <div class="soc"><a class="pill" href="https://www.instagram.com/frenchcarwash77/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.2 6a1.1 1.1 0 1 1-1.1 1.1A1.1 1.1 0 0 1 17.2 6z"/></svg>Instagram</a><a class="pill" href="https://www.tiktok.com/@frenchcarwash" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 2h-3.2v13.2a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .8.1V9.1a6.1 6.1 0 1 0 5.3 6V8.6a7.6 7.6 0 0 0 4.4 1.4V6.8A4.4 4.4 0 0 1 16.6 2z"/></svg>TikTok</a></div>
+      </div>
+    </div>
+    <div class="legal"><span>&copy; French Car Wash. Tous droits réservés.</span><span>Maquette de démonstration</span></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>

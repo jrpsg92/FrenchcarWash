@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lavage et tarifs | French Car Wash</title>
+<meta name="description" content="Formules de lavage automobile Simple, Médium et Luxe, et traitement céramique PTFE 12%.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>(function(){try{if('scrollRestoration' in history)history.scrollRestoration='manual'}catch(e){}try{var d=document.documentElement;if(!matchMedia('(prefers-reduced-motion: reduce)').matches){if(sessionStorage.getItem('fc-nav')){d.classList.add('pt','arr');sessionStorage.removeItem('fc-nav')}else if(!sessionStorage.getItem('fc-seen')){d.classList.add('pt')}sessionStorage.setItem('fc-seen','1')}}catch(e){}})();</script>
+</head>
+<body>
+<div class="curtain" id="curtain" aria-hidden="true"><div class="c-logo"><img src="img/logo.png" alt="" width="620" height="149"><span class="c-shine"></span></div><div class="c-bar"><i></i></div></div>
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="French Car Wash, accueil"><img src="img/logo.png" alt="French Car Wash" width="170" height="41"></a>
+    <ul class="links" id="menu"><li><a href="index.html">Accueil</a></li><li><a href="lavage.html" aria-current="page">Lavage</a></li><li><a href="services.html">Services</a></li><li><a href="avis.html">Avis &amp; carte</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <a class="btn sm" href="contact.html">Prendre RDV</a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><i></i></button>
+  </div>
+</header>
+<main>
+<section class="phero grain">
+  <div class="ph"><img src="img/mousse.jpg" alt="" style="object-position:50% 38%" decoding="async"></div>
+  <div class="wrap"><span class="eyebrow">Lavage</span><h1>Grille des tarifs</h1><p class="lead">Trois formules et un traitement céramique.</p></div>
+</section>
+
+<section class="block" data-s="formules">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="eyebrow">Nos formules</span><h2 class="h2">Trois niveaux de soin.</h2></div>
+      <div class="switch" role="group" aria-label="Affichage des prix"><button type="button" id="btnHT" aria-pressed="true">Prix HT</button><button type="button" id="btnTTC" aria-pressed="false">Prix TTC</button></div>
+    </div>
+    <div class="cards">
+      <article class="card mv"><h3>Nettoyage Simple</h3><div class="price"><span data-ht="49">49</span>€<small class="u">HT</small></div>
+        <ul><li>Dépollution &amp; lavage carrosserie</li><li>Nettoyage approfondi des jantes</li><li>Aspiration de l'habitacle</li><li>Lavage soigné des vitres</li></ul>
+        <a class="btn ghost" href="contact.html" data-pick="simple">Réserver</a></article>
+      <article class="card mv"><h3>Nettoyage Médium</h3><div class="price"><span data-ht="85">85</span>€<small class="u">HT</small></div>
+        <ul><li>Toutes les prestations du Simple</li><li>Dépoussiérage &amp; soin plastiques</li><li>Nettoyage des conduits d'aération</li><li>Finition brillance carrosserie</li></ul>
+        <a class="btn ghost" href="contact.html" data-pick="medium">Réserver</a></article>
+      <article class="card top mv"><span class="badge">Le plus complet</span><h3>Nettoyage Luxe</h3><div class="price"><span data-ht="120">120</span>€<small class="u">HT</small></div>
+        <ul><li>Lavage, décontamination &amp; dépollution</li><li>Aspiration intégrale minutieuse</li><li>Traitement nourrissant plastiques &amp; cuirs</li><li>Shampoing sièges, moquettes &amp; ciel de toit</li></ul>
+        <a class="btn" href="contact.html" data-pick="luxe">Réserver</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="block" data-s="ceramique" style="padding-top:0">
+  <div class="wrap ceramic">
+    <div>
+      <span class="eyebrow">Haute protection</span>
+      <h2 class="h2">Traitement Céramique Nano-Polymère <em class="grad">PTFE 12%</em></h2>
+      <p class="lead">Bouclier hydrophobe longue durée protégeant votre carrosserie contre les micro-rayures, les résines et les déjections d'oiseaux.</p>
+      <ul class="facts"><li>Teste à droite. Passe la souris pour faire tomber la pluie.</li><li>Sans protection, l'eau s'étale et laisse des traces.</li><li>Avec la céramique, elle perle et glisse.</li></ul>
+      <div class="cprice">À partir de <span data-ht="60">60</span>€ <small class="u">HT</small></div>
+      <a class="btn" href="contact.html" data-pick="ceramique">Demander un devis</a>
+    </div>
+    <div class="lab">
+      <canvas id="water" aria-label="Simulation de gouttes d'eau sur une carrosserie"></canvas>
+      <div class="labhint" id="labhint">Passe la souris, ou glisse le doigt</div>
+      <div class="lab-bar">
+        <div class="switch" role="group" aria-label="Protection"><button type="button" id="mNu" aria-pressed="true">Sans protection</button><button type="button" id="mCer" aria-pressed="false">Céramique</button></div>
+        <div style="display:flex;gap:.5rem"><button class="mini" type="button" id="rain" aria-pressed="false">Pluie</button><button class="mini" type="button" id="clear">Essuyer</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="ph"><img src="img/jet.jpg" alt="Deux hommes lavant une voiture noire au jet" style="object-position:50% 38%" decoding="async"></div>
+  <div class="wrap"><div class="bin mv">
+    <span class="eyebrow">Rendez-vous</span>
+    <h2 class="h2">Ton véhicule, entre de bonnes mains.</h2>
+    <p class="lead">Lundi au samedi, de 9h à 19h, à Pontault-Combault.</p>
+    <div style="margin-top:1.6rem"><a class="btn" href="contact.html">Prendre RDV</a></div>
+  </div></div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html" aria-label="French Car Wash"><img src="img/logo.png" alt="French Car Wash" width="170" height="41"></a>
+        <p style="margin-top:.8rem;max-width:30ch">Lavage &amp; Esthétique Automobile.</p>
+        <div class="tri" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+      <div>
+        <h4>Atelier</h4>
+        <p>17 Rue Lucien Brunet<br>77340 Pontault-Combault</p>
+        <p>Lundi au samedi, 9h à 19h<br>Dimanche fermé</p>
+        <div class="status"><i></i><span></span></div>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="lavage.html">Lavage et tarifs</a></li>
+          <li><a href="services.html">Vitres teintées, pare-brise, achat et vente</a></li>
+          <li><a href="avis.html">Avis et carte</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Suivre l'atelier</h4>
+        <div class="soc"><a class="pill" href="https://www.instagram.com/frenchcarwash77/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.2 6a1.1 1.1 0 1 1-1.1 1.1A1.1 1.1 0 0 1 17.2 6z"/></svg>Instagram</a><a class="pill" href="https://www.tiktok.com/@frenchcarwash" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 2h-3.2v13.2a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .8.1V9.1a6.1 6.1 0 1 0 5.3 6V8.6a7.6 7.6 0 0 0 4.4 1.4V6.8A4.4 4.4 0 0 1 16.6 2z"/></svg>TikTok</a></div>
+      </div>
+    </div>
+    <div class="legal"><span>&copy; French Car Wash. Tous droits réservés.</span><span>Maquette de démonstration</span></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
